@@ -15,6 +15,10 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem 'bcrypt'
+gem "validate_url"
+gem "faker"
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
