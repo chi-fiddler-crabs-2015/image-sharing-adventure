@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   validates :email, presence: true
   validates :password_hash, presence: true
 
-  has_many :albums
+  has_many :albums, foreign_key: "owner_id"
   has_many :images, through: :albums
 
 

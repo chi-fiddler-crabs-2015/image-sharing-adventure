@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>All albums</h1>
+    <% @albums.each do |album| %>
+      <img src="<%= album.images.first.url %>">
+      <a href="/albums/<%= album.id %>"><%= album.name %></a>
+    <% end %>
+  <%end%>
+</div>

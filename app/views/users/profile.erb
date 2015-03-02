@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Welcome to your profile, <%= @user.name %>!</h1>
+  <% if @user.albums.count > 0 %>
+    <% @user.albums.each do |album| %>
+      <img src="<%= album.images.first.url %>">
+      <a href="/albums/<%= album.id %>"><%= album.name %></a>
+    <% end %>
+  <%end%>
+</div>
